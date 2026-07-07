@@ -21,7 +21,7 @@ En una primera fase se realizó la modelación del Rover en Blender, para su pos
 
 ![Animación de ejemplo](/assets/images/Captura%20desde%202025-05-01%2018-44-34.png)
 <div style="text-align: center;">
-  <a href="https://github.com/avalen2022/danieljr_armed_rover_ROS_2" target="_blank">Github of the rover</a>
+  <a href="https://github.com/Alvvalencia/danieljr_armed_rover_ROS_2" target="_blank">Github of the rover</a>
 </div>
 
 ## **Grafos Del Rover**

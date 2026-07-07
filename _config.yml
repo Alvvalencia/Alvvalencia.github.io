@@ -19,13 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Robotics Software Blog
-email: avalen2022@alumnos.urjc.es
+email: alv.valenciaa@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This site is dedicated to documenting my practices as a Robotics Software Engineering student. 
+  This site is dedicated to documenting my practices as a Robotics Software Engineering student.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://avalen2022.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: avalen2022
-github_username:  avalen2022
+url: "https://alvvalencia.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: Alvvalencia
 
 # Build settings
 theme: minima
