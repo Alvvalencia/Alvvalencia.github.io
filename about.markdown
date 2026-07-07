@@ -6,14 +6,15 @@ permalink: /about/
 
 <img class="pf-about-photo" src="/assets/images/alvaro.jpg" alt="Portrait of Álvaro Valencia" width="200" height="200">
 
-I'm **Álvaro Valencia Maiquez**, a Robotics Software Engineering student at URJC
-(Universidad Rey Juan Carlos, Madrid), currently working in robotics software at
-**Auryn Robotics**.
+I'm **Álvaro Valencia Maiquez**, a Robotics Software Engineer at **Auryn Robotics**.
+I graduated in Robotics Software Engineering from URJC (Universidad Rey Juan
+Carlos, Madrid).
 
 I like building autonomy end to end — mapping, localization, navigation and
 perception — taking it from Gazebo simulation all the way to real hardware.
-This site is my engineering log: course work and personal projects in mobile
-robotics, service robotics, embedded systems, and robot modeling & simulation.
+This site is my engineering log: projects from my degree and beyond, covering
+mobile robotics, service robotics, embedded systems, and robot modeling &
+simulation.
 
 ## Toolbox
 

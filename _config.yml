@@ -23,8 +23,9 @@ tagline: Robotics Software Engineer
 email: alv.valenciaa@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio and engineering log of Álvaro Valencia — Robotics Software
-  Engineering student at URJC. SLAM, navigation, localization and embedded
-  systems with ROS 2, Gazebo, C++ and Python.
+  Engineer at Auryn Robotics, Robotics Software Engineering graduate from
+  URJC. SLAM, navigation, localization and embedded systems with ROS 2,
+  Gazebo, C++ and Python.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alvvalencia.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Alvvalencia
