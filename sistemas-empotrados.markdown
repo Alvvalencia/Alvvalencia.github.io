@@ -1,18 +1,7 @@
 ---
-layout: default
-title: Sistemas Empotrados
+layout: category
+title: Embedded Systems
+category: sistemas-empotrados
+description: Arduino, ESP32, sensors and actuators on real hardware — vending machines, smart cars and more.
 permalink: /sistemas-empotrados/
 ---
-
-<h1>Posts de Sistemas Empotrados</h1>
-<ul>
-  {% for post in site.posts %}
-    {% if post.categories contains "sistemas-empotrados" %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a> 
-        <span>({{ post.date | date: "%d %b %Y" }})</span>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-

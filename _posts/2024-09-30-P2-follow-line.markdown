@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "P2-Follow-line"
+title: "P2 — Follow Line"
 date:   2024-09-30 9:22:00 +0200
 categories: mobile-robotics
 ---

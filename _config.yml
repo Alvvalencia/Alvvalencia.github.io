@@ -18,18 +18,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Robotics Software Blog
+title: Álvaro Valencia
+tagline: Robotics Software Engineer
 email: alv.valenciaa@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This site is dedicated to documenting my practices as a Robotics Software Engineering student.
+  Portfolio and engineering log of Álvaro Valencia — Robotics Software
+  Engineering student at URJC. SLAM, navigation, localization and embedded
+  systems with ROS 2, Gazebo, C++ and Python.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alvvalencia.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Alvvalencia
+author: Álvaro Valencia Maiquez
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.

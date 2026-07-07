@@ -1,43 +1,108 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+{%- include head.html -%}
+<body class="pf-home">
+{%- include header.html -%}
+<main>
 
-<style>
-nav a[href="/sistemas-empotrados/"] {
-  display: inline-block;
-  white-space: normal;
-  line-height: 1.2em;
-  vertical-align: top;
-}
-</style>
+  <section class="pf-hero">
+    <div class="pf-wrap">
+      <p class="pf-eyebrow pf-mono">// robotics software &middot; madrid</p>
+      <h1 class="pf-hero-title">Robots that map,<br>plan &amp; move.</h1>
+      <p class="pf-hero-sub">
+        I'm Álvaro Valencia, a Robotics Software Engineering student at URJC (Madrid).
+        I build autonomy — SLAM, navigation, localization, perception — in simulation
+        and on real hardware.
+      </p>
+      <ul class="pf-stack" aria-label="Tech stack">
+        <li>ROS 2</li><li>Gazebo</li><li>Python</li><li>C++</li><li>OpenCV</li><li>MoveIt</li><li>Arduino</li><li>Raspberry Pi</li>
+      </ul>
+      <div class="pf-hero-actions">
+        <a class="pf-btn pf-btn-solid" href="#projects">See projects</a>
+        <a class="pf-btn" href="mailto:{{ site.email }}">Get in touch</a>
+      </div>
+    </div>
+  </section>
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <section class="pf-section" id="projects">
+    <div class="pf-wrap">
+      <h2 class="pf-section-label pf-mono">/featured_projects</h2>
+      <div class="pf-cards">
+        {%- assign featured = site.posts | where: "featured", true -%}
+        {%- for post in featured -%}
+        <a class="pf-card" href="{{ post.url | relative_url }}">
+          <div class="pf-card-media">
+            {%- if post.card -%}
+            <video muted loop playsinline preload="none"
+                   poster="{{ post.card | append: '.jpg' | relative_url }}"
+                   data-src="{{ post.card | append: '.webm' | relative_url }}"></video>
+            {%- endif -%}
+          </div>
+          <div class="pf-card-status pf-mono">
+            <span class="pf-live" aria-hidden="true"></span>{{ post.topic }}
+          </div>
+          <div class="pf-card-body">
+            <h3>{{ post.card_title | default: post.title }}</h3>
+            <p>{{ post.summary }}</p>
+          </div>
+        </a>
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
 
-  {{ content }}
+  <section class="pf-section" id="logs">
+    <div class="pf-wrap">
+      <h2 class="pf-section-label pf-mono">/course_logs</h2>
+      <div class="pf-log-grid">
+        {%- assign logs = "service-robotics|Service Robotics|Drones, autonomous parking and warehouse robots.|/service-robotics/;;mobile-robotics|Mobile Robotics|Navigation, obstacle avoidance and Monte Carlo localization.|/mobile-robotics/;;sistemas-empotrados|Embedded Systems|Arduino, ESP32 and sensor work on real hardware.|/sistemas-empotrados/;;modelating-simulation|Modeling & Simulation|Robot modeling pipelines from Blender to Gazebo and ROS 2.|/modelating-simulation/" | split: ";;" -%}
+        {%- for entry in logs -%}
+        {%- assign f = entry | split: "|" -%}
+        {%- assign catkey = f[0] -%}
+        {%- assign catposts = site.categories[catkey] -%}
+        <a class="pf-log-card" href="{{ f[3] | relative_url }}">
+          <span class="pf-log-count pf-mono">{{ catposts | size }}</span>
+          <h3>{{ f[1] }}</h3>
+          <p>{{ f[2] }}</p>
+        </a>
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "All Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts reversed -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+  <section class="pf-section" id="posts">
+    <div class="pf-wrap">
+      <h2 class="pf-section-label pf-mono">/latest_posts</h2>
+      <ul class="pf-post-list">
+        {%- for post in site.posts limit: 6 -%}
+        <li>
+          <span class="pf-mono pf-post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="pf-mono pf-post-cat">{{ post.categories | first }}</span>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </section>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
-</div>
+</main>
+{%- include footer.html -%}
+<script>
+  (function () {
+    var vids = document.querySelectorAll('video[data-src]');
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var v = e.target;
+        v.src = v.dataset.src;
+        v.play().catch(function () {});
+        io.unobserve(v);
+      });
+    }, { rootMargin: '200px' });
+    vids.forEach(function (v) { io.observe(v); });
+  })();
+</script>
+</body>
+</html>

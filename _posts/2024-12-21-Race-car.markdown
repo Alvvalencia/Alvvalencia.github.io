@@ -1,8 +1,13 @@
 ---
 layout: post
-title:  "P4-SmartCar-FollowLine"
+title: "P4 — SmartCar Follow-Line"
 date:   2024-12-21 10:00:00 +0200
 categories: sistemas-empotrados
+featured: true
+card: /assets/cards/smart-car
+topic: /embedded/smartcar_followline
+card_title: "SmartCar Follow-Line"
+summary: "Arduino + ESP32 line follower with IR sensing and obstacle handling — on real hardware."
 ---
 
 ## P4 SmartCar FollowLine

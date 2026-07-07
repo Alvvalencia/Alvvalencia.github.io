@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "P3-Autonomous-Parking"
+title: "P3 — Autonomous Parking"
 date: 2025-11-07 11:00:00 +0200
 categories: service-robotics
+featured: true
+card: /assets/cards/auto-parking
+topic: /service_robotics/auto_parking
+card_title: "Autonomous Parking"
+summary: "LIDAR gap detection with trigonometry, lateral stabilization and a parking state machine."
 ---
 
 # **Autonomous Parking Controller**

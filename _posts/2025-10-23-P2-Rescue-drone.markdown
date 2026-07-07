@@ -1,8 +1,13 @@
 ---
 layout: post  
-title: "P2-Rescue-drone"  
+title: "P2 — Rescue Drone"
 date: 2025-10-23 11:00:00 +0200  
 categories: service-robotics  
+featured: true
+card: /assets/cards/drone-rescue
+topic: /service_robotics/rescue_drone
+card_title: "Search & Rescue Drone"
+summary: "Autonomous sweep planning, GPS-to-local frame conversion and person detection from a drone."
 ---
 
 # **Autonomous Search and Rescue Drone**

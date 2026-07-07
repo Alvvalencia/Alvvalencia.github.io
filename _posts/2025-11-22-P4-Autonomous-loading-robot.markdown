@@ -1,6 +1,6 @@
 ---
 layout: post  
-title: "P4-Autonomous-Loading-Robot"  
+title: "P4 — Autonomous Loading Robot"
 date: 2025-11-22 11:00:00 +0200  
 categories: service-robotics  
 ---

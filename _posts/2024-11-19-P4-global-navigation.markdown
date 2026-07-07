@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "P4-Global-Navigation"
+title: "P4 — Global Navigation"
 date:   2024-11-27 11:45:00 +0200
 categories: mobile-robotics
 ---

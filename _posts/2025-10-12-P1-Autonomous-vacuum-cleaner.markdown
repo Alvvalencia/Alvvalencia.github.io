@@ -1,8 +1,13 @@
 ---
 layout: post
-title:  "P1-Autonomous-Vacuum-Cleaner-Grid"
+title: "P1 — Autonomous Vacuum Cleaner"
 date:   2025-10-12 11:00:00 +0200
 categories: service-robotics
+featured: true
+card: /assets/cards/vacuum-grid
+topic: /service_robotics/grid_coverage
+card_title: "Autonomous Vacuum Coverage"
+summary: "Occupancy-grid coverage planning with BFS, map preparation and waypoint control."
 ---
 
 # **Autonomous Navigation for a Vacuum Robot**

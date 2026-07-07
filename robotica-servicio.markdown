@@ -1,18 +1,7 @@
 ---
-layout: default
+layout: category
 title: Service Robotics
+category: service-robotics
+description: Rescue drones, autonomous parking, warehouse loading robots and visual localization — the 2025/26 service robotics course log.
 permalink: /service-robotics/
 ---
-
-<h1>Service Robotics Posts</h1>
-<ul>
-  {% for post in site.posts %}
-    {% if post.categories contains "service-robotics" %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a> 
-        <span>({{ post.date | date: "%d %b %Y" }})</span>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-

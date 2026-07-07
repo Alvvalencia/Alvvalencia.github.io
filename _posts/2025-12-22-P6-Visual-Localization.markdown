@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "P6-Visual-Localization"
+title: "P6 — Visual Localization"
 date: 2025-12-22 11:00:00 +0200
 categories: service-robotics
 ---

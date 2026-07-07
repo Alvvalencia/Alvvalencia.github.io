@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "P1-Vacuum-Cleaner"
+title: "P1 — Vacuum Cleaner"
 date:   2024-09-25 18:49:50 +0200
 categories: mobile-robotics
 ---

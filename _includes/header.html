@@ -1,0 +1,25 @@
+<header class="pf-header">
+  <div class="pf-wrap pf-nav-row">
+    <a class="pf-brand" rel="author" href="{{ '/' | relative_url }}">
+      <span class="pf-brand-mark">AV</span>
+      <span class="pf-brand-name">Álvaro Valencia</span>
+    </a>
+    <nav class="pf-nav" aria-label="Site">
+      <a href="{{ '/#projects' | relative_url }}">Projects</a>
+      <a href="{{ '/#logs' | relative_url }}">Course logs</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+      <button class="pf-theme-toggle" type="button" aria-label="Switch color theme">
+        <span class="pf-toggle-icon" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+<script>
+  document.querySelector('.pf-theme-toggle').addEventListener('click', function () {
+    var root = document.documentElement;
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+</script>

@@ -1,8 +1,13 @@
 ---
 layout: post
-title:  "P5-Monte-Carlo-Localization"
+title: "P5 — Monte Carlo Localization"
 date:   2024-12-21 9:30:00 +0200
 categories: mobile-robotics
+featured: true
+card: /assets/cards/monte-carlo
+topic: /mobile_robotics/mcl
+card_title: "Monte Carlo Localization"
+summary: "Particle-filter localization: propagation, laser-based weighting and resampling."
 ---
 
 # **Monte Carlo Localization (MCL)**

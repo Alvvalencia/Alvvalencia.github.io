@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="pf-category">
+  <p class="pf-eyebrow pf-mono">// course log</p>
+  <h1 class="pf-cat-title">{{ page.title }}</h1>
+  {%- if page.description -%}<p class="pf-cat-desc">{{ page.description }}</p>{%- endif -%}
+  <ul class="pf-post-list">
+    {%- assign posts = site.categories[page.category] -%}
+    {%- for post in posts -%}
+    <li>
+      <span class="pf-mono pf-post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>

@@ -1,8 +1,13 @@
 ---
 layout: post
-title:  "ROS 2-Rover"
+title: "ROS 2 Rover"
 date:   2025-05-01 10:00:00 +0200
 categories: modelating-simulation
+featured: true
+card: /assets/cards/ros2-rover
+topic: /simulation/ros2_rover
+card_title: "ROS 2 Armed Rover"
+summary: "Rover modeled in Blender, simulated in Gazebo, controlled with ROS 2 and MoveIt."
 ---
 
 ## Modelating Rover on ROS 2
