@@ -4,14 +4,23 @@ title: About
 permalink: /about/
 ---
 
+<img class="pf-about-photo" src="/assets/images/alvaro.jpg" alt="Portrait of Álvaro Valencia" width="200" height="200">
+
 I'm **Álvaro Valencia Maiquez**, a Robotics Software Engineering student at URJC
-(Universidad Rey Juan Carlos, Madrid).
+(Universidad Rey Juan Carlos, Madrid), currently working in robotics software at
+**Auryn Robotics**.
 
-This site is my engineering log: hands-on work in mobile robotics, service
-robotics, embedded systems and robot modeling & simulation — built with
-**ROS 2, Gazebo, Python and C++**, in simulation and on real hardware.
+I like building autonomy end to end — mapping, localization, navigation and
+perception — taking it from Gazebo simulation all the way to real hardware.
+This site is my engineering log: course work and personal projects in mobile
+robotics, service robotics, embedded systems, and robot modeling & simulation.
 
-![Álvaro Valencia](/assets/images/Without_random.png)
+## Toolbox
+
+- **Robotics**: ROS 2, Gazebo, MoveIt, Blender-to-simulation pipelines
+- **Languages**: Python, C++
+- **Perception & estimation**: OpenCV, particle filters (MCL), SLAM
+- **Embedded & hardware**: Arduino, ESP32, Raspberry Pi, sensors and actuators
 
 ## Selected work
 
@@ -19,6 +28,8 @@ robotics, embedded systems and robot modeling & simulation — built with
   [Read the write-up](/service-robotics/2025/10/23/P2-Rescue-drone.html).
 - **ROS 2 Armed Rover** — modeled in Blender, simulated in Gazebo, controlled
   with ROS 2 and MoveIt. [Code on GitHub][rover].
+- **Autonomous Parking** — LIDAR gap detection and a parking state machine.
+  [Read the write-up](/service-robotics/2025/11/07/P3-Autonomous-Parking.html).
 - **Bartender robot** — team project from the Software Architecture course.
   [Code on GitHub][bartender].
 - **Raspberry Pi lab work** — sensors and actuators examples. [Code on GitHub][raspi].
