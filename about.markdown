@@ -39,6 +39,7 @@ simulation.
 
 - 📧 [alv.valenciaa@gmail.com](mailto:alv.valenciaa@gmail.com)
 - 💻 [github.com/Alvvalencia](https://github.com/Alvvalencia)
+- 💼 [linkedin.com/in/alvaro-valencia-maiquez](https://www.linkedin.com/in/alvaro-valencia-maiquez)
 
 [rover]: https://github.com/Alvvalencia/danieljr_armed_rover_ROS_2
 [bartender]: https://github.com/Docencia-fmrico/proyecto-final-compania-letal
